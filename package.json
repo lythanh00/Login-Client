@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "angular": "1",
+    "angular-jwt": "^0.1.11",
     "angular-route": "1"
   },
   "devDependencies": {

@@ -1,0 +1,8 @@
+<div ng-controller="ProfileController as profileCtrl">
+  <h2>User Profile</h2>
+  <div>
+    <strong>Name:</strong> {{ profileCtrl.profile.name }} <br />
+    <strong>Email:</strong> {{ profileCtrl.profile.email }} <br />
+  </div>
+  <button ng-click="profileCtrl.logout()">Đăng Xuất</button>
+</div>
