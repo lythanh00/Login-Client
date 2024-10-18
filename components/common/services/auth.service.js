@@ -14,6 +14,9 @@ angular.module("myApp").service("AuthService", [
           localStorage.setItem("token", token);
           localStorage.setItem("refreshToken", refreshToken);
           $location.path("/profile");
+        })
+        .catch(function (error) {
+          console.error("Error login:", error);
         });
     };
 

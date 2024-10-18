@@ -8,7 +8,6 @@ angular.module("myApp").controller("ProfileController", [
       ProfileService.getProfile()
         .then(function (response) {
           vm.profile = response.data; // Gán dữ liệu profile vào scope
-          console.log("profile", vm.profile);
         })
         .catch(function (error) {
           console.error("Error fetching profile:", error);
